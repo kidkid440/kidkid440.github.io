@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+     
+ 
+    <head>
+        <title>Stafford Very First Webpage!!!!</title>
+        <style>
+            body {
+                background: rgb(0, 0, 0);
+                color: rgb(0, 0, 0);
+                padding: 10px;
+                font-family: georgia;
+            }
+            header {
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+            #all-contents {
+                max-width: 800px;
+                margin: auto;
+            }
+    
+            /* navigation menu */
+            nav {
+                background: rgb(0, 0, 1000);
+                margin-bottom: 50px;
+                display: flex;
+                padding: 10px;
+                border-radius: 10px;
+            }
+            nav header {
+                display: flex;
+                align-items: center;
+                color: rgb(0, 0, 0);
+                flex: 1;
+            }
+            nav ul {
+                list-style-image: none;
+            }
+            nav li {
+                display: inline-block;
+                padding: 0 10px;
+            }
+            nav a {
+                text-decoration: none;
+                color: rgb(0, 0, 0);
+            }
+    
+            /* main container area beneath menu */
+            main {
+                background: rgb(1000, 0, 0);
+                display: flex;
+                border-radius: 10px;
+            }
+            .sidebar {
+                margin-right: 25px;
+                padding: 10px;
+            }
+            .sidebar img {
+                width: 200px;
+        
+            }
+            .content {
+                flex: 1;
+                padding: 15px;
+            }
+            .interests header {
+                font-size: 1.25em;
+            }
+        </style>
+    </head>
+ 
+    <body>
+        <div id="all-contents"> 
+           <nav>
+               <header>My First Website</header>
+               <ul>
+                 <li><a href="index.html">Home</a></li>
+                 <li><a href="portfolio.html">Portfolio</a></li>
+               </ul>
+           </nav>
+           
+           <main>
+               <div class="side bar">
+                  <img src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/10639498_981721865210452_5924606987816493805_n.jpg?_nc_cat=105&_nc_ht=scontent-atl3-1.xx&oh=f5ae55ee8680804abd1246170120ccf4&oe=5C4706FE" width="150" height="300" >
+               </div>
+               <div class="content">
+                  <header>Stafford Smith</header> 
+
+                  <p>Student at Operation Spark.</p>
+                  <section class="interest">
+                      <header>Interest
+                        <ul>
+                            <li>Sports</li>
+                            <li>DBZ</li>
+                            <li>Coding</li>
+                        </ul>
+                      </header>
+                  </section>
+                   
+               </div>
+           </main>
+        </div>
+    </body>
+ 
+</html>

@@ -1,4 +1,6 @@
 /*
+* Control Flow.
+*
 * 0. We make decisions in our code by asking true or false statements. We then give 
 * a block of code to run whether a given codition is true or false. We get this 
 * done by using if, if else-if & switch statements.

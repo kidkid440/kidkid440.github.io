@@ -22,13 +22,14 @@
 *
 * 6. Null- is when a value doesn't point to a object. Ex. var nothing = Null
 *
-* 7. Infinity and -Infinity- is greater that any number, it behaves the same as itself. Ex. Infinity * 1 = Infinity
+* 7. Infinity and -Infinity- is greater that any number, it behaves the same as itself. 
+*                Ex. Infinity * 1 = Infinity
 */
 
 /*
-* Complex Data Types can be infinte in size, can collect other values, they can be changed and they copy by
-* Reference. Copy by Reference means when a Complex Data is copied it just points 
-* to the orignal value, because Complex Data Types can be so large it would eat up alot
+* Complex Data Types can be infinte in size, can collect other values, they can be changed 
+* and they copy by Reference. Copy by Reference means when a Complex Data is copied it 
+* just points to the orignal value, because Complex Data Types can be so large it would eat up alot
 * of space if fully copied. They also can hold any kind of value.
 *
 * 1. Arrays are containers that hold multiple elements at once. We hold the values 
@@ -57,13 +58,3 @@
 *
 *                               console.log(addNum);
 */
-
-
-
-
-
-
-
-
-
-

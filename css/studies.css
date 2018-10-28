@@ -12,7 +12,9 @@ header {
     max-width: 800px;
     margin: auto;
 }
-
+.bold-text {
+    font-weight: bold;
+}
 /* navigation menu */
 nav {
     background: rgb(0, 0, 1000);

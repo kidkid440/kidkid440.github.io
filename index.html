@@ -19,7 +19,9 @@
                 max-width: 800px;
                 margin: auto;
             }
-    
+            .bold-text {
+                font-weight: bold;
+            }
             /* navigation menu */
             nav {
                 background: rgb(0, 0, 1000);
@@ -34,6 +36,11 @@
                 color: rgb(0, 0, 0);
                 flex: 1;
             }
+            .thin-blue-border {
+                border-color: blue;
+                border-width: 15px;
+                border-style: solid;
+  }
             nav ul {
                 list-style-image: none;
             }
@@ -75,20 +82,20 @@
            <nav>
             <header>My first website</header>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="studies.html">Studies</a></li>
+                <li><a class="bold-text" href="index.html">Home</a></li>
+                <li><a class="bold-text" href="portfolio.html">Portfolio</a></li>
+                <li><a class="bold-text" href="studies.html">Studies</a></li>
             </ul>
         </nav>
            
            <main>
                <div class="sidebar">
-                  <img src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/10639498_981721865210452_5924606987816493805_n.jpg?_nc_cat=105&_nc_ht=scontent-atl3-1.xx&oh=f5ae55ee8680804abd1246170120ccf4&oe=5C4706FE" width="150" height="300" >
+                  <img class="my-image thin-blue-border" src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/10639498_981721865210452_5924606987816493805_n.jpg?_nc_cat=105&_nc_ht=scontent-atl3-1.xx&oh=f5ae55ee8680804abd1246170120ccf4&oe=5C4706FE" width="150" height="300" >
                </div>
                <div class="content">
                   <header>Stafford Smith</header> 
 
-                  <p>Student at Operation Spark.</p>
+                  <p> Student at <a href="https://operationspark.org/">Operation Spark</a></p>
                   <section class="interests">
                       <header>Interest</header>
                         <ul>

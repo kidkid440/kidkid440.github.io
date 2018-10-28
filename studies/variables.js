@@ -33,3 +33,35 @@ console.log(myName); // prints => bob
 var myVariable = 1;
 var myVariable = true;
 myVariable = "someString";
+
+/*
+* 1. let
+*
+* let is just like variables but they are block scope to function and loops. They do not have 
+* to be initialized.
+*                                         Ex let num = 2;
+*                                            if(num === 2){
+*                                               num = 3
+*                                           
+*                                             console.log(num) // num = 3    
+*                                              }
+*                                              console.log(num) // num = 2
+*
+*2. const are scope to global or local depending on where it is delcared. Unlike let they have 
+* to be initialized when declared.  Ex var num = 2;
+*                                      if(num === 2){
+*                                      const num1 = 3
+*                                  
+*                                      console.log(num1) // num1 equals 3
+*                                    }
+*                                      console.log(num1) // num1 equals undefined
+*/
+
+/*
+* Hoisting
+*
+* 1. Allows you to intialize and use different data types like functions and variables before 
+* they are declared.             Ex num = 4;
+*                                   console.log(num); // num equals 4
+*                                   var num;
+*/

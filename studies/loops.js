@@ -3,9 +3,9 @@
 *
 * 1. While Loop is a block of code that loops as long as ONE condition in 
 * parenthesis is True. You start with a variable that sets the start for the loop.
-* What you want your While loop to do everytime goes in the curly brackets.
+* What you want your While loop to do everytime it loops goes in the curly brackets.
 * The ending of this loop is VERY IMPORTANT. You must increment or decrement
-* depending on the loop. if not you wiil create and infinite loop which will crash
+* depending on the loop. If not you will create and infinite loop which will crash
 * your system.
 *     
 *     ex.     var i = 0;
@@ -30,7 +30,7 @@
 *
 * 2a. For Loop backward is the same concept as above except this time your going 
 * backwards thru the Array .Your opening statement should start at the end of 
-* the Array. Then as long as this statement is true the loop will run. Then you want to 
+* the Array. Next long as this statement is true the loop will run. Then you want to 
 *  set a decrement for the loop.
 *                     Ex.          for(var i = arr.length -1; i >= 0; i--){
 *                                    console.log(arr[i]);

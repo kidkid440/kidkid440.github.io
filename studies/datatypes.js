@@ -22,7 +22,7 @@
 *
 * 6. Null- is when a value doesn't point to a object. Ex. var nothing = Null
 *
-* 7. Infinity and -Infinity- is greater that any number, it behaves the same as itself. 
+* 7. Infinity and -Infinity- is greater than any number, it behaves the same as itself. 
 *                Ex. Infinity * 1 = Infinity
 */
 
@@ -33,21 +33,21 @@
 * of space if fully copied. They also can hold any kind of value.
 *
 * 1. Arrays are containers that hold multiple elements at once. We hold the values 
-* in [].The values that are input  are accessed by index starting at 0.  
+* in [].The values that are input are accessed by index starting at 0.  
 *                                        Ex.   var arr = [1, 2, 3];
 *                                                         0  1  2
 *
 * To access the elements you have to use bracket notation. Ex. arr[1] = 2
 *
 * 2. Objects are containers that store values in key/value pairs. We hold these values
-* in {}. Unlike arrays * the have no order, to access them you use the keys. 
+* in {}. Unlike arrays objects have no order, to access them you use the keys. 
 *                                 Ex. var obj = {  
 *                                       nameFirst: "Stafford",
 *                                     nameLast: "Smith"
 *
 *                                    }
 *
-* To access the values in an Object we can use bracket notattion or dot notation.
+* To access the values in an Object we can use bracket notation or dot notation.
 *                     Ex.  obj.nameFirst or obj[nameFirst] = "Stafford"
 *
 *

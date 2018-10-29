@@ -7,7 +7,7 @@
 */
 
 /*
-* 1.if, else-if statements start with a the word if then() inside it will be a test condition,
+* 1.if, else-if statements start with the word if then() inside it will be a test condition,
 * if true the system will run what we put in {}. If false if will move to the next
 * block of code which will be an else if condition. Same structure as the if 
 * condition and you can have as many else if's as you need. So just in case none 

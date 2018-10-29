@@ -1,18 +1,18 @@
 /* 
 * Functions:
 *
-* 0. Are reusable blocks of that we can use later on.You can use it whenever you 
+* 0. Are reusable blocks of that we can use later on.Y ou can use it whenever you 
 * need and as many times as you need. Helps to prevent writting same
 * code over and over.
 *
-* 1a.There are two stages to using a Function first is Declaration/Definition. This is when we 
+* 1a. There are two stages to using a Function first is Declaration/Definition. This is when we 
 * start the peocess of making the Function and giving it a name. First we start 
 * with the word function this lets the computer know this following code is to be
 * reused. Next we must give our Function a name that is relatable to the actions
 * of the Function. We also have to give the 
-* instrutions that we want ran here.This will be everything inside the curly
+* instrutions that we want ran here. This will be everything inside the curly
 * barckets {}. Since we need this reusable we DO NOT hard code
-* variables instead we use Parameters in there places. Parameters are place holders
+* values, instead we use Parameters in there places. Parameters are place holders
 * that we use inside of our Function body. It gives our code
 * block flexability. 
 *        The word function    functionNwame( parameter1,  parameter2)
@@ -32,7 +32,7 @@
 
 /*
 * 2. Parameters are place holders for our values. Arguments are the values the 
-* code block will use in the body of the Function.
+* code block will run thru the body of the Function.
 *     See   Examples Above.....
 */
 
@@ -54,8 +54,17 @@
 */
 
 /*
-* 6. Functions can see both parent and global and it can modify variables in both.
-*
+* 6. Functions can see both parent and global and it can modify variables in just parent.
+*           Ex    function varAccess(){
+                             var name = 'Stafford';
+                               return function(){
+                                       name = 'Smith';
+                                         return name + ' last'
+  }
+}
+     var getAccess = varAccess();
+
+         console.log(getAccess()); // prints "Smith last"
 *
 *
 */

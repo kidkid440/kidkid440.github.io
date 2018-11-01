@@ -28,10 +28,10 @@
 
 /*
 * 2.Switch statement is used when a if statement might be to much to input. It takes
-* a expression and runs it thru different cases. Each case has a statement to return if
-* that given case is true. Each case has to have a break on the last line to stop
+* a expression and runs it thru different cases. Each case has a statement that will 
+* print if that given case is true. Each case has to have a break on the last line to stop
 * the Switch from going to the next case. In the chance that none of your cases are met
-* you need a default return, inputing the word default and the statement you want back.
+* you need a default Statement, inputing the word default and the statement you want back.
 *
 *       Ex.      var color = 'red';
 *              Switch(color){

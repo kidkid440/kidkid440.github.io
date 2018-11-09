@@ -1,9 +1,11 @@
 // Exercise: Looping a Triangle
-
-    for(let i = '#'; i.length < 8; i += '#'){
+var num = 8;
+function triangles(num){
+ 
+for(var i = '#'; i.length < num ; i += '#'){
         console.log(i);
     }
-
+}
 
 // Exercise: Fizzbuzz
 

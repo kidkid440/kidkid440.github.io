@@ -54,6 +54,7 @@ function arrayOrObject(collection) {
 //////////////////////////////////////////////////////////////////////
 
 function capitalizeWord(string) {
+    
    return string.charAt(0).toUpperCase() + string.slice(1);
 
     
@@ -64,7 +65,12 @@ function capitalizeWord(string) {
 //////////////////////////////////////////////////////////////////////
 
 function capitalizeAllWords(string) {
-    return string.toUpperCase();
+    var arr = string.split(' ');
+    for(var i = 0;i < arr.length;i++){
+     arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
+    }
+    
+    return arr.join(' ');
 }
 
 //////////////////////////////////////////////////////////////////////
@@ -92,8 +98,8 @@ return str2.charAt(0).toUpperCase() + str2.slice(1).concat(' ', 'is a',' ', str.
 //////////////////////////////////////////////////////////////////////
 
 function maybeNoises(object) {
-if(object.hasOwnProperty(['noises']) && object['noises'] !== [] && true === Array.isArray(object['noises'])){
-    return object['noises'].join(' ');
+if(object.hasOwnProperty('noises') && object.noises.length > 0){
+    return object.noises.join(' ');
 } else {
 
     return 'there are no noises';
@@ -133,7 +139,15 @@ return object;
 //////////////////////////////////////////////////////////////////////
 
 function isFriend(name, object) {
-
+    //var arr = object['friends'];
+    if(object.hasOwnProperty('friends')){
+    for(var i = 0;i < object['friends'].length;i++){
+        if(name === object['friends'][i]){
+            return true;
+        }
+        }
+    }
+        return false;
 }
 
 //////////////////////////////////////////////////////////////////////
@@ -141,7 +155,22 @@ function isFriend(name, object) {
 //////////////////////////////////////////////////////////////////////
 
 function nonFriends(name, array) {
-
+    var notFriends = [];
+    
+    
+    
+    for(var i = 0;i < array.length;i++){
+        if(array[i].friends.join(' ').includes(name) === false && array[i].name !== name){
+         notFriends.push(array[i].name);
+        } 
+            
+        }
+    
+    return notFriends;
+    
+    
+       
+    
 }
 
 //////////////////////////////////////////////////////////////////////
@@ -149,7 +178,13 @@ function nonFriends(name, array) {
 //////////////////////////////////////////////////////////////////////
 
 function updateObject(object, key, value) {
-
+if(!object.hasOwnProperty([key])){
+ object[key] = value;
+ return object;
+}else {
+    object[key] = value;
+    return object;
+}
 }
 
 //////////////////////////////////////////////////////////////////////
@@ -158,6 +193,14 @@ function updateObject(object, key, value) {
 
 function removeProperties(object, array) {
 
+    for(var i = 0;i < array.length;i++){
+       if(Object.keys(object).join(' ').includes(array[i])){
+           delete object[array[i]];     
+           
+       }
+    }
+    
+
 }
 
 //////////////////////////////////////////////////////////////////////
@@ -165,7 +208,13 @@ function removeProperties(object, array) {
 //////////////////////////////////////////////////////////////////////
 
 function dedup(array) {
-
+var arr = [];
+for(var i = 0;i < array.length;i++){
+    if(arr.indexOf(array[i]) < 0){
+       arr.push(array[i]);
+    }
+}
+return arr;
 }
 
 //////////////////////////////////////////////////////////////////////

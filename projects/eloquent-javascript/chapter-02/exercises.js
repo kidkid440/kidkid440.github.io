@@ -3,7 +3,12 @@
 // triangles ///////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
-function triangles() {
+function triangles(num) {
+  var hashTag = '#';
+  for(var i = 0;i < num; i++){
+        console.log(hashTag);
+        hashTag += '#';
+    }
 
 }
 ////////////////////////////////////////////////////////////////////////////////
@@ -12,13 +17,39 @@ function triangles() {
 
 function fizzBuzz() {
   
+  for(var i = 1; i <= 15; i++){
+    if(i % 3 == 0 && i % 5 == 0){
+        console.log("fizzbuzz");
+    }else if(i % 3 == 0){
+        console.log("fizz");
+    }else if(i % 5 == 0){
+        console.log("buzz");
+    }else{
+        console.log(i);
+    }
+}
+  
 }
 
 ////////////////////////////////////////////////////////////////////////////////
 // drawChessboard //////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
-function drawChessboard() {
+function drawChessboard(changeSize) {
+  var game = '';
+
+for(var e = 0; e < changeSize; e++){
+for(var s = 0; s < changeSize; s++){
+    if((s + e) % 2 === 0){
+        game = game + ' ';
+    }else {
+        game = game + '#';
+    }
+}
+game += '\n';
+}
+console.log(game);
+
 
 }
 

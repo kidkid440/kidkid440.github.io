@@ -20,21 +20,81 @@ var _ = require('lodown-staffordsmith');
  */
 
 var maleCount = function(array) {
-    let malebox = 0;
+    let maleBox = 0;
+    _.filter(array,function(element,i,array){
+        if(array[i].gender === 'male'){
+            return maleBox ++;
+        }
+    });
+    return maleBox;
     
 };
 
-var femaleCount;
+var femaleCount = function(array){
+    let femaleBox = 0;
+    _.filter(array, function(element,i,array){
+        if(array[i].gender === 'female'){
+            return femaleBox ++;
+        }
+    });
+    return femaleBox;
+};
 
-var oldestCustomer;
+var oldestCustomer = function(array){
+    
+    for(var i=0; i < array.length; i++){
+    let wise = ( acc, cur ) => Math.max( array[i].age, array[i].age );
+      if(array[i].age === array.reduce( wise )){
+           return array[i].name;
+      }
+          
+      
+    }
+    
+    
+};
 
-var youngestCustomer;
+var youngestCustomer = function(array){
+    let baby = _.filter(array, function(element,i,array){
+        if(array[i].age > 0){
+            return array[i].age;
+        }
+    });
+      for(var i; i < array.length; i++){
+          if(Math.min(baby) === array[i].age){
+              return array[i].name;
+          }
+      }
+      
+};
 
-var averageBalance;
+var averageBalance = function(array){
+    var median = _.filter(array, function(element, i,array){
+        return element.balance;
+    });
+    return median / median.length;
+};
 
-var firstLetterCount;
+var firstLetterCount = function(array, letter){
+    let customerCount = 0;
+    for(var i = 0; i < array.length; i++){
+        if(array[i].name[0].toUpperCase() === letter.toUpperCase()){
+            customerCount ++;
+        } 
+    }
+    return customerCount;
+};
 
-var friendFirstLetterCount;
+var friendFirstLetterCount = function(array,customer,letter){
+    let customerCount = 0;
+    for(var i = 0; i < array[customer].friends.length; i++){
+        if(array[customer].friends[i][0].toUpperCase() === letter.toUpperCase()){
+            customerCount ++;
+        } 
+    }
+    return customerCount;
+};
+
 
 var friendsCount;
 
